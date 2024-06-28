@@ -4,11 +4,17 @@ package com.z.leetcode.medium;
  * 5. 最长回文子串
  * https://leetcode.cn/problems/longest-palindromic-substring/description/
  *
+ * 1. 中心扩散法： {@link P5_LongestPalindromicSubstring#longestPalindrome}
+ *
  * @author zhi
  * @date 2024/6/28
  */
 public class P5_LongestPalindromicSubstring {
 
+    /**
+     * 中心扩散法
+     * 选中一个或两个中心位置，向两边扩散，遍历所有可能性取其中最长值
+     */
     public String longestPalindrome(String s) {
         int length = s.length();
         if (length <= 1) {
