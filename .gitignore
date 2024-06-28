@@ -1,0 +1,12 @@
+.idea
+.classpath
+.project
+*.iml
+*.eml
+target
+*.log
+.DS_Store
+*.cache
+*.lock
+logs
+
