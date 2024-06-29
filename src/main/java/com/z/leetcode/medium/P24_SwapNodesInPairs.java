@@ -6,7 +6,7 @@ import com.z.leetcode.common.ListNode;
  * 24. 两两交换链表中的节点
  * https://leetcode.cn/problems/swap-nodes-in-pairs/
  *
- * 1. 迭代法 {@link P24_SwapNodesInPairs#swapPairs}
+ * 1. 迭代法 {@link #swapPairs}
  *
  * @author zhi
  * @date 2024/6/28
@@ -16,6 +16,9 @@ public class P24_SwapNodesInPairs {
     /**
      * 迭代法
      * 依次替换符合要求的节点
+     *
+     * 时间复杂度：O(n)，其中 n 是链表的节点数量。需要对每个节点进行更新指针的操作
+     * 空间复杂度：O(1)
      */
     public ListNode swapPairs(ListNode head) {
         // 当链表为空或只有一个节点时,直接返回

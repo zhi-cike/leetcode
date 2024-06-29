@@ -17,7 +17,7 @@ public class P5_LongestPalindromicSubstringTest {
      * @see P5_LongestPalindromicSubstring#longestPalindrome
      */
     @Test
-    public void test() {
+    public void testLongestPalindrome() {
         P5_LongestPalindromicSubstring solution = new P5_LongestPalindromicSubstring();
 
         // babad -> bab/aba
