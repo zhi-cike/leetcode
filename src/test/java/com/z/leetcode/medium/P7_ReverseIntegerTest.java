@@ -19,7 +19,7 @@ public class P7_ReverseIntegerTest {
         testExecute(new P7_ReverseInteger()::reverse1);
     }
 
-    private void testExecute(ReverseAction solution) {
+    private void testExecute(Solution solution) {
         // 123  ->  321
         int reverse = solution.reverse(123);
         Assertions.assertEquals(321, reverse);
@@ -48,7 +48,7 @@ public class P7_ReverseIntegerTest {
 
 
     @FunctionalInterface
-    interface ReverseAction {
+    interface Solution {
 
         int reverse(int x);
     }

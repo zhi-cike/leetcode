@@ -35,7 +35,7 @@ public class P1_TwoNumTest {
         testExecute(new P1_TwoNum()::twoSum3);
     }
 
-    public void testExecute(SolutionAction solution) {
+    public void testExecute(Solution solution) {
 
         // nums=[2,7,11,15], taget=9  ->  [0,1]/[1,0]
         int[] result = solution.twoNum(new int[]{2, 7, 11, 15}, 9);
@@ -60,7 +60,7 @@ public class P1_TwoNumTest {
     }
 
     @FunctionalInterface
-    public interface SolutionAction {
+    public interface Solution {
 
         int[] twoNum(int[] nums, int target);
 

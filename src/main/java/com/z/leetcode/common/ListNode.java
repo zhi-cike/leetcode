@@ -23,6 +23,23 @@ public class ListNode {
         this.next = next;
     }
 
+    public ListNode reverse() {
+        ListNode reverse = null;
+        ListNode l = this;
+        while (l != null) {
+            ListNode next = l.next;
+            if (reverse == null) {
+                reverse = l;
+                reverse.next = null;
+            } else {
+                l.next = reverse;
+                reverse = l;
+            }
+            l = next;
+        }
+        return reverse;
+    }
+
     public String toString() {
         StringBuilder sb = new StringBuilder();
         ListNode node = this;

@@ -24,7 +24,7 @@ public class P11_ContainerWithMostWaterTest {
         testExecute(new P11_ContainerWithMostWater()::maxArea3);
     }
 
-    private void testExecute(MaxAreaAction solution) {
+    private void testExecute(Solution solution) {
         // [1,8,6,2,5,4,8,3,7]  ->  49
         int maxArea = solution.maxArea(new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7});
         Assertions.assertEquals(49, maxArea);
@@ -35,7 +35,7 @@ public class P11_ContainerWithMostWaterTest {
     }
 
     @FunctionalInterface
-    public interface MaxAreaAction {
+    public interface Solution {
 
         int maxArea(int[] height);
 
