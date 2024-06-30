@@ -27,6 +27,14 @@ public class P1_TwoNumTest {
         testExecute(new P1_TwoNum()::twoSum2);
     }
 
+    /**
+     * @see P1_TwoNum#twoSum3
+     */
+    @Test
+    public void testTwoSum3() {
+        testExecute(new P1_TwoNum()::twoSum3);
+    }
+
     public void testExecute(SolutionAction solution) {
 
         // nums=[2,7,11,15], taget=9  ->  [0,1]/[1,0]
