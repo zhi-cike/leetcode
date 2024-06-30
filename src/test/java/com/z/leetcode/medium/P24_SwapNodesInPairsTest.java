@@ -17,7 +17,7 @@ public class P24_SwapNodesInPairsTest {
      * @see P24_SwapNodesInPairs#swapPairs
      */
     @Test
-    void test() {
+    public void test() {
         P24_SwapNodesInPairs solution = new P24_SwapNodesInPairs();
 
         // [1,2,3,4] -> [2,1,4,3]
