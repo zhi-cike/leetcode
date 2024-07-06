@@ -15,11 +15,19 @@ public class P215_KthLargestElementInAnArrayTest {
         testExecute(new P215_KthLargestElementInAnArray()::findKthLargest);
     }
 
+    @Test
+    public void testFindKthLargest2() {
+        testExecute(new P215_KthLargestElementInAnArray()::findKthLargest2);
+    }
+
     public void testExecute(Solution solution) {
         int kth;
 
         kth = solution.findKthLargest(new int[]{3}, 1);
         Assertions.assertEquals(3, kth);
+
+        kth = solution.findKthLargest(new int[]{-1, -1}, 2);
+        Assertions.assertEquals(-1, kth);
 
         kth = solution.findKthLargest(new int[]{3, 2, 1, 5, 6, 4}, 2);
         Assertions.assertEquals(5, kth);
